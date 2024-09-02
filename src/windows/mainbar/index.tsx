@@ -1,6 +1,6 @@
 import { App, Astal, Gtk } from 'astal'
 import { Card } from '$/components';
-import { ClockWidget, SystemTrayWidget } from '$/widgets';
+import { ClockWidget, SystemTrayWidget, SystemWidget } from '$/widgets';
 import "./index.scss"
 
 export const windowName = 'mainbar'
@@ -23,6 +23,7 @@ export const RightBar = () => {
   return (
     <box spacing={4} orientation={Gtk.Orientation.HORIZONTAL} halign={Gtk.Align.END} valign={Gtk.Align.FILL}>
       {/* <Card children={SystemTrayWidget()} /> */}
+      <Card children={SystemWidget()} />
       <Card children={ClockWidget()} />
     </box>
   )

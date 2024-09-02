@@ -1,12 +1,19 @@
-import { Gtk, Variable, bind } from 'astal';
+import { Gtk, bind } from 'astal';
+import { time } from '$/lib';
 
-const time = Variable('time').poll(1000, "date +%H:%M:%S");
+const formatDate = (d: Date) => {
+  return d.toLocaleString(undefined, {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  })
+};
 
 export default () => {
   return (
     <box halign={Gtk.Align.CENTER} spacing={4}>
       <icon icon="clock-fill-symbolic" halign={Gtk.Align.CENTER} className="text-primary" />
-      <label label={bind(time)} halign={Gtk.Align.CENTER} />
+      <label label={bind(time).as(formatDate)} halign={Gtk.Align.CENTER} />
     </box>
   )
 }

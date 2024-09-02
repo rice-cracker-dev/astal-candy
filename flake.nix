@@ -4,6 +4,7 @@
     astal.url = "github:astal-sh/libastal";
     astal-tray.url = "github:astal-sh/tray";
     astal-network.url = "github:astal-sh/network";
+    astal-wireplumber.url = "github:astal-sh/wireplumber";
   };
 
   outputs = {
@@ -24,9 +25,11 @@
     buildInputs = with pkgs; [
       gjs
       cava
+      networkmanager
       inputs.astal.packages.${system}.default
       inputs.astal-tray.packages.${system}.default
       inputs.astal-network.packages.${system}.default
+      inputs.astal-wireplumber.packages.${system}.default
     ];
   in {
     packages.${system}.default = pkgs.stdenv.mkDerivation rec {

@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1724285690,
-        "narHash": "sha256-bEiLJar7YE3DMVFG7Hb4P5p/TT9g9ST4QVGHMBGLzYo=",
+        "lastModified": 1725144873,
+        "narHash": "sha256-S+mZOlWsJ8+fagWx3vr1s/GoTi0/G7UmUJctPtETJEM=",
         "owner": "astal-sh",
         "repo": "libastal",
-        "rev": "24af00f6a7f624feda4b6aaceb4c5b0fa6f536d6",
+        "rev": "49cdf5d5e010c9abb9b02034999eef2f49f066b9",
         "type": "github"
       },
       "original": {
@@ -51,6 +51,24 @@
       "original": {
         "owner": "astal-sh",
         "repo": "tray",
+        "type": "github"
+      }
+    },
+    "astal-wireplumber": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1724147405,
+        "narHash": "sha256-4f0rovItROj5o0WNO2cFwSz515vwskHg03ypiPL5bZI=",
+        "owner": "astal-sh",
+        "repo": "wireplumber",
+        "rev": "7706d24965a268b6075d3fb5557ef6b96c889483",
+        "type": "github"
+      },
+      "original": {
+        "owner": "astal-sh",
+        "repo": "wireplumber",
         "type": "github"
       }
     },
@@ -104,11 +122,27 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1724819573,
-        "narHash": "sha256-GnR7/ibgIH1vhoy8cYdmXE6iyZqKqFxQSVkFgosBh6w=",
+        "lastModified": 1720957393,
+        "narHash": "sha256-oedh2RwpjEa+TNxhg5Je9Ch6d3W1NKi7DbRO1ziHemA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "71e91c409d1e654808b2621f28a327acfdad8dc2",
+        "rev": "693bc46d169f5af9c992095736e82c3488bf7dbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1725103162,
+        "narHash": "sha256-Ym04C5+qovuQDYL/rKWSR+WESseQBbNAe5DsXNx5trY=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "12228ff1752d7b7624a54e9c1af4b222b3c1073b",
         "type": "github"
       },
       "original": {
@@ -123,7 +157,8 @@
         "astal": "astal",
         "astal-network": "astal-network",
         "astal-tray": "astal-tray",
-        "nixpkgs": "nixpkgs_4"
+        "astal-wireplumber": "astal-wireplumber",
+        "nixpkgs": "nixpkgs_5"
       }
     }
   },
