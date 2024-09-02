@@ -3,14 +3,14 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     astal.url = "github:astal-sh/libastal";
     astal-tray.url = "github:astal-sh/tray";
+    astal-network.url = "github:astal-sh/network";
   };
 
   outputs = {
     self,
     nixpkgs,
-    astal,
-    astal-tray,
-  }: let
+    ...
+  }@inputs: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {inherit system;};
 
@@ -23,8 +23,10 @@
 
     buildInputs = with pkgs; [
       gjs
-      astal.packages.${system}.default
-      astal-tray.packages.${system}.default
+      cava
+      inputs.astal.packages.${system}.default
+      inputs.astal-tray.packages.${system}.default
+      inputs.astal-network.packages.${system}.default
     ];
   in {
     packages.${system}.default = pkgs.stdenv.mkDerivation rec {

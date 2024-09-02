@@ -18,9 +18,27 @@
         "type": "github"
       }
     },
-    "astal-tray": {
+    "astal-network": {
       "inputs": {
         "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1722727879,
+        "narHash": "sha256-UcA9SPUQ923U1OZJO4TIi7mYDumT2k6MkOxBhdpAJf0=",
+        "owner": "astal-sh",
+        "repo": "network",
+        "rev": "652e23a6fd7da58461bbf0a1b022be0d0a0896f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "astal-sh",
+        "repo": "network",
+        "type": "github"
+      }
+    },
+    "astal-tray": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1724413714,
@@ -54,6 +72,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1716137900,
+        "narHash": "sha256-sowPU+tLQv8GlqtVtsXioTKeaQvlMz/pefcdwg8MvfM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "6c0b7a92c30122196a761b440ac0d46d3d9954f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1719254875,
         "narHash": "sha256-ECni+IkwXjusHsm9Sexdtq8weAq/yUyt1TWIemXt3Ko=",
         "owner": "nixos",
@@ -68,7 +102,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1724819573,
         "narHash": "sha256-GnR7/ibgIH1vhoy8cYdmXE6iyZqKqFxQSVkFgosBh6w=",
@@ -87,8 +121,9 @@
     "root": {
       "inputs": {
         "astal": "astal",
+        "astal-network": "astal-network",
         "astal-tray": "astal-tray",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       }
     }
   },
